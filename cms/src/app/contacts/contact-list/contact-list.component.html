@@ -1,0 +1,17 @@
+<div class="panel-heading">
+		<!--<h3 class="list-group-item-heading">
+			Contacts
+			<a class="btn btn-success pull-right">New Contact</a>
+		</h3>-->
+	<h2 class="list-group-item-heading">
+        Contacts
+		<div class="pull-right">
+            <a class="btn btn-success pull-right">New Contact</a>
+		</div>
+	</h2>
+</div>
+<div class="panel-body">
+	<ul class="list-group">
+		<my-cms-contact-item [contact]="dummy_var" (click)="onSelected(dummy_var)">  </my-cms-contact-item>
+	</ul>
+</div>

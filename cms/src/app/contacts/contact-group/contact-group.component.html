@@ -1,0 +1,27 @@
+<!--
+<div class="panel panel-default clearfix">
+	<div class="panel-heading">
+		<h4 class="list-group-item-heading">
+			{{selectedContact?.name}}
+			<button class="btn btn-danger pull-right">Delete</button>
+			<button class="btn btn-primary pull-right">Edit</button>
+		</h4>
+		
+	</div>
+	<div class="panel-body list-group-item">
+		<my-cms-contact-item [contact]="selectedContact">  </my-cms-contact-item>
+	</div>
+</div>
+-->
+<div class="row list-group-item clearfix">
+
+    <h3 >
+        {{selectedContact?.name}}
+        <div class="pull-right">
+            <button class="btn btn-primary ">Edit</button>
+            <button class="btn btn-danger ">Delete</button>
+        </div>
+    </h3>
+    <my-cms-contact-item [contact]="dummy_var" (click)="onSelected(dummy_var)">  </my-cms-contact-item>
+
+</div>
