@@ -11,6 +11,7 @@ import { Contact } from './contact';
 export class ContactsComponent implements OnInit {
 	selectedContact: Contact;
 
+
 	constructor() { }
 
 	ngOnInit() {

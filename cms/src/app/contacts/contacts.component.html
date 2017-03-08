@@ -1,10 +1,12 @@
 <div class="row">
-	<div class="col-md-5">
+	<div class="col-md-4">
 		<my-cms-contact-list (contactSelected)="selectedContact = $event"> </my-cms-contact-list>
 	</div>
-	
-	<div class="col-md-5">
-		<my-cms-contact-detail [selectedContact]="selectedContact" > </my-cms-contact-detail>
-		<my-cms-contact-group [selectedContact]="selectedContact"> </my-cms-contact-group>
+
+	<div class="col-xs-1"></div>
+
+	<div class="col-md-5" *ngIf="selectedContact != null">
+		<my-cms-contact-detail [selectedContact]="selectedContact" *ngIf="selectedContact?.group == null"> </my-cms-contact-detail>
+		<my-cms-contact-group [selectedContact]="selectedContact" *ngIf="selectedContact?.group != null"> </my-cms-contact-group>
 	</div>
 </div>

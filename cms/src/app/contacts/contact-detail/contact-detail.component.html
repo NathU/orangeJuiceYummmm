@@ -1,51 +1,21 @@
-<!--
-<div class="panel-heading">
-	<h1 class="list-group-item-heading">
-		{{selectedContact?.name}}
-		<button class="btn btn-danger pull-right">Delete</button>
-		<button class="btn btn-primary pull-right">Edit</button>
-	</h1>
-	<div class="row">
-		<img src="{{selectedContact?.imageUrl}}" alt="" class="img-responsive">
-	</div>
-</div>
-<div class="panel-body list-group-item clearfix">
-	<p>Email: {{selectedContact?.email}}</p>
-	<p>Phone: {{selectedContact?.number}}</p>
-</div>
-
-
-<div class="row">
-    <div class="col-md-5">
-        <my-cms-contact-list (contactSelected)="selectedContact = $event"> </my-cms-contact-list>
-    </div>
-
-    <div class="col-md-5">
-        <my-cms-contact-detail [selectedContact]="selectedContact" > </my-cms-contact-detail>
-
-    </div>
-</div>
--->
-
-<div class="row list-group-item-heading">
+<div class="row list-group-item clearfix">
     <h3 >
-        {{selectedContact?.name}}
+
         <div class="pull-right">
             <button class="btn btn-primary ">Edit</button>
             <button class="btn btn-danger ">Delete</button>
         </div>
+        {{selectedContact?.name}}
     </h3>
-</div>
+    <hr/>
 
-<div class="row list-group-item clearfix">
+    <div class="row ">
 
-    <div class="pull-left">
-        <img src="{{selectedContact?.imageUrl}}" alt="" class="img-responsive">
-    </div>
-
-    <div class="pull-right">
+        <div class="col-md-5">
+            <img src="{{selectedContact?.imageUrl}}" alt="" class="img-responsive">
+        </div>
         <p>Email: {{selectedContact?.email}}</p>
         <p>Phone: {{selectedContact?.phone}}</p>
     </div>
-</div>
 
+</div>
