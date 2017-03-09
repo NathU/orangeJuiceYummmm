@@ -1,18 +1,3 @@
-<!--
-<div class="panel-heading">
-	<h2 class="list-group-item-heading">
-        Contacts
-		<div class="pull-right">
-            <a class="btn btn-success pull-right">New Contact</a>
-		</div>
-	</h2>
-</div>
-<div class="panel-body">
-	<ul class="list-group">
-        <my-cms-contact-item *ngFor="let c of contacts" [contact]=c (click)="onSelected(c)">  </my-cms-contact-item>
-	</ul>
-</div>
--->
 <div class="row list-group-item clearfix">
     <h3>
 
@@ -22,7 +7,6 @@
         Contacts
     </h3>
     <hr/>
-
     <ul class="list-group">
         <my-cms-contact-item *ngFor="let c of contacts" [contact]=c (click)="onSelected(c)">  </my-cms-contact-item>
     </ul>
