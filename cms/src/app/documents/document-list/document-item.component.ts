@@ -8,6 +8,7 @@ import { Document } from '../document';
 })
 export class DocumentItemComponent implements OnInit {
   @Input() document: Document;
+  @Input() documentIdx: Number;
 
   constructor() { }
 

@@ -1,16 +1,15 @@
 
-
 <div class="panel panel-default">
   <div class="panel-heading">
     <div class="row pad-left-right">
       <span class="pull-left title">Documents</span>
-      <a class="btn btn-success pull-right">Add Document</a>
+      <a routerLink="/documents/new" class="btn btn-success pull-right">Add Document</a>
     </div>
   </div>
   <div class="panel-body">
     <div class="center-panel">
       <ul class="list-group">
-        <my-cms-document-item *ngFor="let d of documents" [document]=d >  </my-cms-document-item>
+        <my-cms-document-item *ngFor="let d of documents; let i = index" [document]=d [documentIdx]=i >  </my-cms-document-item>
       </ul>
     </div>
   </div>

@@ -1,3 +1,21 @@
-<p>
-  messages works!
-</p>
+<div class="row">
+	<div class="col-md-4">
+		<!-- ?????? <my-cms-document-list (contactSelected)="selectedContact = $event"> </my-cms-document-list> -->
+		<my-cms-message-list> </my-cms-message-list>
+	</div>
+	
+	<div class="col-xs-1"></div>
+
+	<div class="col-md-5" >
+		<router-outlet class="fill"></router-outlet>
+	</div>
+
+	<!--
+	<div class="col-xs-1"></div>
+
+	<div class="col-md-5" *ngIf="selectedContact != null">
+		<my-cms-contact-detail [selectedContact]="selectedContact" *ngIf="selectedContact?.group == null"> </my-cms-contact-detail>
+		<my-cms-contact-group [selectedContact]="selectedContact" *ngIf="selectedContact?.group != null"> </my-cms-contact-group>
+	</div>
+	-->
+</div>
